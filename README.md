@@ -7,7 +7,7 @@
 ### Installation
 1) Install [Visual Studio 2019](https://visualstudio.microsoft.com/) with C++ support. Or update current using Visual Studio Installer.
 2) Install Visual Studio [GLSL langugage intergration](https://marketplace.visualstudio.com/items?itemName=DanielScherzer.GLSL). (optionaly)
-3) Install Vulkan [SDK 1.1.126.0 and Vulkan RT 1.1.126.0](https://vulkan.lunarg.com/sdk/home#windows).
+3) Install Vulkan [SDK 1.1.126.0](https://vulkan.lunarg.com/sdk/home#windows).
 
 ### Cloning
 1) Clone this repository using any git client.
