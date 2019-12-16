@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{2dd6433c-20ec-4886-8c3f-b826ae9bcb16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Vulkan">
+      <UniqueIdentifier>{9b1075a1-540c-41ce-88b9-f4e40002e34c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Engine\Entity.hpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System.hpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Component.hpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Graphics.hpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\VulkanWindow.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\VulkanDebug.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\DeviceInfo.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Exceptions.hpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\EngineInfo.hpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\Vulkan.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\WindowDeviceInfo.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Engine\Vulkan\VulkanExceptions.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </None>
+  </ItemGroup>
+</Project>
