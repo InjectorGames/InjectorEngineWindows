@@ -1,12 +1,12 @@
 
 // Copyright 2019 Nikita Fediuchin
-
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
-
+//
 //    http://www.apache.org/licenses/LICENSE-2.0
-
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -14,15 +14,17 @@
 // limitations under the License.
 
 #pragma once
-#include "Engine/Vulkan/VulkanWindow.hpp"
+#include "Vulkan/Window.hpp"
+
+using namespace Vulkan;
 
 class Graphics
 {
 protected:
 	// GLFW window instance
 	GlfwWindow glfwWindow;
-	// Vulkan instance
-	VulkanWindow vulkanWindow;
+	// Vulkan window instance
+	Window vulkanWindow;
 	
 public:
 	// Creates a new graphics class instance
@@ -39,12 +41,12 @@ public:
 		if (glfwVulkanSupported() == GLFW_FALSE)
 			throw VulkanException("Vulkan is not supported on this machine");
 
-		vulkanWindow = CreateVulkanWindowInstance(glfwWindow, windowSize, appName, appVersion, vulkanExtensions, validationLayers, deviceExtensions);
+		vulkanWindow = CreateWindowInstance(glfwWindow, windowSize, appName, appVersion, vulkanExtensions, validationLayers, deviceExtensions);
 	}
 	// Disposes graphic class instance
 	~Graphics()
 	{
-		DestroyVulkanWindowInstance(vulkanWindow);
+		DestroyWindowInstance(vulkanWindow);
 		glfwDestroyWindow(glfwWindow);
 		glfwTerminate();
 	}
@@ -55,6 +57,7 @@ public:
 		while (!glfwWindowShouldClose(glfwWindow))
 		{
 			glfwPollEvents();
+			vulkanWindow->DrawFrame();
 		}
 	}
 };

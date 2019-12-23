@@ -19,10 +19,19 @@
     <Filter Include="Source Files\Engine\Vulkan">
       <UniqueIdentifier>{9b1075a1-540c-41ce-88b9-f4e40002e34c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{66dc8e49-5d72-42af-a992-e3e19205dbef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders\Engine">
+      <UniqueIdentifier>{fabbba45-2cdf-4e4d-beab-9c3840bde768}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Vulkan\Pipeline.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -38,15 +47,6 @@
     <ClInclude Include="Source\Engine\Graphics.hpp">
       <Filter>Source Files\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Engine\Vulkan\VulkanWindow.hpp">
-      <Filter>Source Files\Engine\Vulkan</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Engine\Vulkan\VulkanDebug.hpp">
-      <Filter>Source Files\Engine\Vulkan</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Engine\Vulkan\DeviceInfo.hpp">
-      <Filter>Source Files\Engine\Vulkan</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Engine\Exceptions.hpp">
       <Filter>Source Files\Engine</Filter>
     </ClInclude>
@@ -59,10 +59,37 @@
     <ClInclude Include="Source\Engine\Vulkan\WindowDeviceInfo.hpp">
       <Filter>Source Files\Engine\Vulkan</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\DeviceInfo.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\Debug.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\Device.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\Swapchain.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\Window.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\Shader.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Vulkan\CommandPool.hpp">
+      <Filter>Source Files\Engine\Vulkan</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Source\Engine\Vulkan\VulkanExceptions.hpp">
+    <None Include="Source\Engine\Vulkan\Exceptions.hpp">
       <Filter>Source Files\Engine\Vulkan</Filter>
+    </None>
+    <None Include="Shaders\Engine\Unlit.frag">
+      <Filter>Source Files\Shaders\Engine</Filter>
+    </None>
+    <None Include="Shaders\Engine\Unlit.vert">
+      <Filter>Source Files\Shaders\Engine</Filter>
     </None>
   </ItemGroup>
 </Project>

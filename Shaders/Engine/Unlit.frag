@@ -13,8 +13,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#pragma once
+#version 460
+#extension GL_ARB_separate_shader_objects : enable
+#extension GL_GOOGLE_include_directive : enable
 
-class Component
+layout(location = 0) in vec3 fragColor;
+
+layout(location = 0) out vec4 outColor;
+
+void main()
 {
-};
+    outColor = vec4(fragColor, 1.0);
+}

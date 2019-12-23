@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Engine\Vulkan\Pipeline.hpp" />
     <ClCompile Include="Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -28,14 +29,20 @@
     <ClInclude Include="Source\Engine\Exceptions.hpp" />
     <ClInclude Include="Source\Engine\Graphics.hpp" />
     <ClInclude Include="Source\Engine\System.hpp" />
+    <ClInclude Include="Source\Engine\Vulkan\CommandPool.hpp" />
     <ClInclude Include="Source\Engine\Vulkan\DeviceInfo.hpp" />
+    <ClInclude Include="Source\Engine\Vulkan\Device.hpp" />
+    <ClInclude Include="Source\Engine\Vulkan\Shader.hpp" />
+    <ClInclude Include="Source\Engine\Vulkan\Swapchain.hpp" />
     <ClInclude Include="Source\Engine\Vulkan\WindowDeviceInfo.hpp" />
     <ClInclude Include="Source\Engine\Vulkan\Vulkan.hpp" />
-    <ClInclude Include="Source\Engine\Vulkan\VulkanDebug.hpp" />
-    <ClInclude Include="Source\Engine\Vulkan\VulkanWindow.hpp" />
+    <ClInclude Include="Source\Engine\Vulkan\Debug.hpp" />
+    <ClInclude Include="Source\Engine\Vulkan\Window.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Source\Engine\Vulkan\VulkanExceptions.hpp" />
+    <None Include="Shaders\Engine\Unlit.frag" />
+    <None Include="Shaders\Engine\Unlit.vert" />
+    <None Include="Source\Engine\Vulkan\Exceptions.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -116,7 +123,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.126.0\Lib32;$(SolutionDir)Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%VULKAN_SDK%\Lib32;$(SolutionDir)Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -135,7 +142,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.126.0\Lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%VULKAN_SDK%\Lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -158,7 +165,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.126.0\Lib32;$(SolutionDir)Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%VULKAN_SDK%\Lib32;$(SolutionDir)Lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -181,7 +188,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.126.0\Lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%VULKAN_SDK%\Lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
