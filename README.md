@@ -1,4 +1,4 @@
-# Found a good framework for this [QT](https://www.qt.io/) :)
+# Successor ----> [Garden](https://github.com/cfnptr/garden)
 
 ## Usage
 
